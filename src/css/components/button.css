@@ -1,0 +1,85 @@
+/* Button Component - BEM Methodology */
+
+.button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: var(--fs-btn);
+    font-weight: var(--weight-regular);
+    color: var(--color-white);
+    font-family: var(--typo-body);
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 3.125rem;
+    /* 50px */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    line-height: var(--line-height-2);
+}
+
+.button:focus {
+    outline: 0.1875rem solid var(--color-gray);
+    /* 3px */
+    outline-offset: 0.25rem;
+    /* 4px */
+}
+
+/* Primary Button */
+.button--primary {
+    background-color: var(--color-darkBlue);
+    color: var(--color-white);
+}
+
+.button--primary:active {
+    transform: translateY(-0.0625rem);
+    /* -1px */
+}
+
+/* Secondary Button */
+.button--secondary {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 0.125rem solid var(--color-white);
+    /* 2px */
+}
+
+.button--secondary:active {
+    transform: translateY(-0.0625rem);
+    /* -1px */
+}
+
+/* Added CTA Button variant with white background and purple text */
+.button--cta {
+    font-family: var(--typo-body);
+    background-color: var(--color-white);
+    color: var(--color-purpleCta);
+    font-size: var(--fs-btn);
+    font-weight: var(--weight-blod);
+    padding: 1.125rem 3.5rem;
+}
+
+.button--cta:active {
+    transform: translateY(-0.0625rem);
+    /* -1px */
+}
+
+/* Large Button */
+.button--large {
+    padding: 1.25rem 4rem;
+    font-size: 1.5rem;
+}
+
+/* Small Button */
+.button--small {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+}
+
+/* Disabled Button */
+.button:disabled,
+.button--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}

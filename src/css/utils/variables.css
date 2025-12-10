@@ -1,0 +1,49 @@
+:root {
+
+  /* Typographie */
+  --typo-header: "Courier Prime", monospace;
+  --typo-body: "roboto", sans-serif;
+
+  /* Hauteur de ligne */
+  --line-height-1: 1.1;
+  /* 110% */
+  --line-height-2: 1.5;
+  /* 150% */
+
+  /* Graisses */
+  --weight-regular: 400;
+  --weight-blod: 700;
+
+  /* Tailles de police (en rem, base 16px) */
+  --fs-h1: 2.4375rem;
+  /* 39px */
+  --fs-h2: 1.5625rem;
+  /* 25px */
+  --fs-h3: 0.9375rem;
+  /* 15px */
+
+  --fs-b1: 1.3125rem;
+  /* 21px */
+  --fs-b2: 1rem;
+  /* 16px */
+  --fs-b3: 0.8125rem;
+  /* 13px */
+
+  --fs-btn: 1.25rem;
+  /* 20px */
+  --fs-small: 0.6875rem;
+  /* 11px */
+
+  /* Couleurs */
+  --color-white: #ffffff;
+  --color-black: #21252D;
+
+  --color-darkBlue: #2A1F5C;
+  --color-yellow: #FDC700;
+  --color-blackCard: #151A25;
+  --color-purple: #432766;
+  --color-purpleDark: #1A1A2E;
+  --color-purpleLight: #2A2A3E;
+  --color-gray: #989592;
+  --color-purpleCta: #8b5cf6;
+}

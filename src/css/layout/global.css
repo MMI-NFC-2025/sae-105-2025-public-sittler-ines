@@ -1,0 +1,34 @@
+/* CTA Section - BEM Methodology */
+
+.cta {
+    background-color: var(--color-black);
+    padding: 4rem 1.5rem;
+}
+
+.cta__container {
+    max-width: 75rem;
+    /* 1200px */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta__title {
+    font-family: var(--typo-header);
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-blod);
+    color: var(--color-white);
+    margin-bottom: 2.5rem;
+    line-height: var(--line-height-2);
+}
+
+.cta__description {
+    margin-bottom: 3rem;
+}
+
+.cta__text {
+    font-family: var(--typo-body);
+    font-size: var(--fs-b2);
+    color: var(--color-white);
+    line-height: var(--line-height-2);
+    font-weight: var(--weight-regular);
+}

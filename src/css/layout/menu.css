@@ -1,0 +1,152 @@
+/* Menu Mobile - Méthodologie BEM - Inspiré du design moderne */
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Modificateur pour menu ouvert */
+.menu--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Header du menu avec logo et bouton fermeture */
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Logo dans le menu */
+.menu__logo {
+  display: block;
+  height: 2.5rem;
+  width: auto;
+}
+
+.menu__logo-img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+/* Bouton fermeture avec croix */
+.menu__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  transition: opacity 0.3s ease;
+}
+
+.menu__close:hover,
+.menu__close:focus {
+  opacity: 0.7;
+}
+
+/* Barres de la croix */
+.menu__close-bar {
+  position: absolute;
+  width: 80%;
+  height: 0.1875rem;
+  background-color: var(--color-white);
+  border-radius: 0.125rem;
+  top: 50%;
+  left: 50%;
+  transition: transform 0.3s ease;
+}
+
+.menu__close-bar:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu__close-bar:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Navigation centrée verticalement et horizontalement */
+.menu__nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 1.5rem;
+}
+
+/* Liste de navigation */
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Items avec animation d'apparition */
+.menu__item {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Animation des items quand le menu est ouvert */
+.menu--open .menu__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Délais d'animation séquentiels */
+.menu--open .menu__item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.menu--open .menu__item:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.menu--open .menu__item:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.menu--open .menu__item:nth-child(4) {
+  transition-delay: 0.25s;
+}
+
+.menu--open .menu__item:nth-child(5) {
+  transition-delay: 0.3s;
+}
+
+.menu--open .menu__item:nth-child(6) {
+  transition-delay: 0.35s;
+}
+
+
+/* Liens en italique avec effet hover violet */
+.menu__link {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h1);
+  font-weight: var(--weight-regular);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}

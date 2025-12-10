@@ -1,0 +1,60 @@
+/* ============================================
+   PARTENAIRE - Section des partenaires
+   ============================================ */
+
+.partenaire {
+    background-color: var(--color-black);
+    /* Reduced section padding to match mockup */
+    padding: 3rem 1.5rem;
+}
+
+.partenaire__container {
+    max-width: 75rem;
+    /* 1200px */
+    margin: 0 auto;
+}
+
+.partenaire__title {
+    font-family: var(--typo-header);
+    font-size: var(--fs-h3);
+    font-weight: var(--weight-blod);
+    text-align: center;
+    color: var(--color-gray);
+    line-height: var(--line-height-1);
+    /* Reduced bottom margin */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* Grid layout for partner cards */
+.partenaire__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Reduced gap between cards */
+    gap: 2rem;
+}
+
+/* Individual partner card */
+.partenaire__card {
+    background-color: var(--color-purpleDark);
+    border: 0.125rem solid var(--color-purpleLight);
+    /* 2px */
+    border-radius: 0.75rem;
+    /* Reduced card padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 3.75rem;
+    /* 60px */
+    transition: all 0.3s ease;
+}
+
+.partenaire__card-text {
+    font-family: var(--typo-header);
+    font-size: var(--fs-small);
+    font-weight: var(--weight-blod);
+    color: var(--color-white);
+    line-height: var(--line-height-2);
+    margin: 0;
+}

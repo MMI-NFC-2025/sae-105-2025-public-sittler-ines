@@ -1,0 +1,54 @@
+/*vendor*/
+@import "./vendors/normalize.css";
+
+/*utils */
+@import "./utils/variables.css";
+
+/*layout*/
+@import "./layout/header.css";
+@import "./layout/menu.css";
+@import "./layout/footer.css";
+@import "./layout/hero.css";
+@import "./layout/global.css";
+
+/*components*/
+@import "./components/button.css";
+@import "./components/cardNavigation.css";
+@import "./components/partenaire.css";
+
+
+/* add typo corier prime */
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.courier-prime-bold {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.courier-prime-regular-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.courier-prime-bold-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* add typo roboto */
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}

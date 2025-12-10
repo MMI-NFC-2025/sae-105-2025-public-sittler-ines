@@ -1,0 +1,28 @@
+/* Styles globaux pour html et body */
+
+html {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--typo-body);
+    font-weight: var(--weight-regular);
+    font-size: var(--fs-b2);
+    line-height: var(--line-height-2);
+    color: var(--color-white);
+    background-color: var(--color-black);
+    overflow-x: hidden;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
