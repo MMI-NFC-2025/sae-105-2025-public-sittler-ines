@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : SITTLER
+- PRÉNOM : Inès
+- GROUPE : B2
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/design/6pO5hAVSzLFwHSKW27yH4G/Maquette-sae?node-id=48-640&t=PYM4peWuQos2FsnN-1 
 
 ## Sujet
 
