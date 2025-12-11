@@ -79,3 +79,112 @@
     </nav>
 
 <!-- fin menu -->
+
+<!-- Contact -->
+<section class="Contact">
+        <h1 class="Contact__title">Contact</h1>
+        <p class="Contact__descrition">Nous sommes à votre écoute. N'hésitez pas à nous contacter pour toute question.</p>
+</section>
+<!-- fin Contact -->
+
+  <!-- SECTION CONTACT -->
+
+        <!-- FORMULAIRE -->
+        <div class="contact__form-wrapper">
+            <h2 class="contact-form__title">Nous écrire</h2>
+            
+            <form class="contact-form">
+                <label class="contact-form__label" for="fullname">Nom complet</label>
+                <input class="contact-form__input" id="fullname" type="text">
+
+                <label class="contact-form__label" for="email">Email</label>
+                <input class="contact-form__input" id="email" type="email">
+
+                <label class="contact-form__label" for="subject">Sujet</label>
+                <select class="contact-form__select" id="subject">
+                    <option value="">Sélectionnez un sujet</option>
+                </select>
+
+                <label class="contact-form__label" for="message">Message</label>
+                <textarea class="contact-form__textarea" id="message"></textarea>
+
+                <a href="/404" class="button button--primary">Envoyer le message</a>
+            </form>
+        </div>
+
+        <!-- INFORMATIONS DE CONTACT -->
+        <div class="contact-info">
+
+            <div class="contact-info__block">
+                <div class="contact-info__icon contact-info__icon--email"></div>
+                <img src="/assets/icons/mail.svg" class="artist__image" />
+                <h3 class="contact-info__title">Email</h3>
+                <p class="contact-info__text">contact@lesrivesduterritoire.fr</p>
+            </div>
+
+            <div class="contact-info__block">
+                <div class="contact-info__icon contact-info__icon--phone"></div>
+                <img src="/assets/icons/telephone.svg" class="artist__image" />
+                <h3 class="contact-info__title">Téléphone</h3>
+                <p class="contact-info__text">+33 (0)3 90 12 34 56</p>
+            </div>
+
+            <div class="contact-info__block">
+                <div class="contact-info__icon contact-info__icon--location"></div>
+               <img src="/assets/icons/Point.svg" class="artist__image" />
+                <h3 class="contact-info__title">Adresse</h3>
+                <p class="contact-info__text">
+                    Berges de la Savoureuse<br>
+                    90000 Belfort, France
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <!-- Added footer section -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <img src="assets/icons/logo.svg" alt="Les rives du Territoire" class="footer__logo-image">
+            </div>
+
+            <div class="footer__menu">
+                <h3 class="footer__menu-title">MENU</h3>
+                <nav class="footer__nav" aria-label="Navigation de pied de page">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="/chemin ver la page evenement" class="footer__nav-link">ÉVÉNEMENT</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/chemin vers la page contact" class="footer__nav-link">CONTACT</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/chemin vers la page a propos" class="footer__nav-link">À PROPOS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__social">
+                <h3 class="footer__social-title">NOUS SUIVRE</h3>
+                <div class="footer__social-links">
+                    <!-- Replaced SVG icons with image placeholders -->
+                    <a href="https://www.facebook.com/?locale=fr_FR" class="footer__social-link" aria-label="Facebook">
+                        <img src="assets/icons/facebook.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/" class="footer__social-link" aria-label="Instagram">
+                        <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                    <a href="https://x.com/?lang=fr" class="footer__social-link" aria-label="Twitter">
+                        <img src="assets/icons/x.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                    <a href="https://www.youtube.com/" class="footer__social-link" aria-label="YouTube">
+                        <img src="assets/icons/youtube.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- fin footer -->
