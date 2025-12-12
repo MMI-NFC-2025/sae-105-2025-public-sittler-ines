@@ -6,7 +6,7 @@
 - NOM : SITTLER
 - PRÉNOM : Inès
 - GROUPE : B2
-- URL du site :
+- URL du site : https://whimsical-eclair-8f32ae.netlify.app/
 - URL FIGMA : https://www.figma.com/design/6pO5hAVSzLFwHSKW27yH4G/Maquette-sae?node-id=48-640&t=PYM4peWuQos2FsnN-1 
 
 ## Sujet
