@@ -1,0 +1,198 @@
+/* Festival Page Components - BEM Methodology */
+
+/* Page Header */
+.page-header {
+  background-color: var(--color-black);
+  padding: 10rem 1.5rem 5rem;
+  text-align: center;
+}
+
+.page-header__container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.page-header__title {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h1);
+  font-weight: var(--weight-blod);
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  line-height: var(--line-height-1);
+}
+
+.page-header__subtitle {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b1);
+  color: var(--color-white);
+  line-height: var(--line-height-2);
+  font-weight: var(--weight-regular);
+}
+
+/* Festival Section */
+.festival-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-white);
+}
+
+.festival-section--dark {
+  background-color: var(--color-blackCard);
+}
+
+.festival-section__container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.festival-section__title {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h2);
+  font-weight: var(--weight-blod);
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: var(--line-height-1);
+}
+
+.festival-section__intro {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b1);
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: var(--line-height-2);
+  font-weight: var(--weight-regular);
+}
+
+/* Festival Article */
+.festival-article {
+  margin-bottom: 3rem;
+}
+
+.festival-article__title {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h2);
+  font-weight: var(--weight-blod);
+  color: var(--color-black);
+  margin-bottom: 2rem;
+  line-height: var(--line-height-1);
+}
+
+.festival-article__content {
+  margin-bottom: 2rem;
+}
+
+.festival-article__text {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b2);
+  color: var(--color-black);
+  line-height: var(--line-height-2);
+  margin-bottom: 1.5rem;
+  font-weight: var(--weight-regular);
+}
+
+.festival-article__image {
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.festival-article__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background-color: var(--color-black);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.team-card__image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.team-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card__content {
+  padding: 1.5rem;
+}
+
+.team-card__name {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h3);
+  font-weight: var(--weight-blod);
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+  line-height: var(--line-height-1);
+}
+
+.team-card__role {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b3);
+  color: var(--color-yellow);
+  margin-bottom: 1rem;
+  font-weight: var(--weight-regular);
+}
+
+.team-card__description {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b3);
+  color: var(--color-white);
+  line-height: var(--line-height-2);
+  font-weight: var(--weight-regular);
+}
+
+/* Charter */
+.charter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.charter-item {
+  text-align: center;
+}
+
+.charter-item__icon {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.charter-item__icon-img {
+  width: 80px;
+  height: 80px;
+}
+
+.charter-item__title {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h3);
+  font-weight: var(--weight-blod);
+  color: var(--color-black);
+  margin-bottom: 1rem;
+  line-height: var(--line-height-1);
+}
+
+.charter-item__text {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b2);
+  color: var(--color-black);
+  line-height: var(--line-height-2);
+  font-weight: var(--weight-regular);
+}

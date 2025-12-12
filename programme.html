@@ -4,32 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les rives du Territoire</title>
-    <!-- add css -->
+    <title>Programme - Les rives du Territoire</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <!-- Added script.js -->
     <script type="module" src="src/js/script.js"></script>
-    <!--favicons-->
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <!-- add typo-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
-
 </head>
 
 <body>
 
-<!-- header -->
-
+    <!-- header -->
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                <img src="assets/icons/logo.svg" alt="Les rives du Territoire" class="header__logo-image">
+                <a href="index.html">
+                    <img src="/assets/icons/logo.svg" alt="Les rives du Territoire" class="header__logo-image">
+                </a>
             </div>
             <button class="header__menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false"
                 aria-controls="menu">
@@ -40,191 +36,278 @@
         </div>
     </header>
 
-
-<!-- fin header -->
-
-
     <!-- menu -->
     <nav class="menu" id="menu" aria-label="Navigation principale">
         <div class="menu__header">
             <a href="index.html" class="menu__logo">
-                <img src="assets/icons/logo.svg" alt="Les rives du Territoire" class="menu__logo-img">
+                <img src="/assets/icons/logo.svg" alt="Les rives du Territoire" class="menu__logo-img">
             </a>
-
             <button class="menu__close" aria-label="Fermer le menu">
                 <span class="menu__close-bar"></span>
                 <span class="menu__close-bar"></span>
             </button>
         </div>
-
         <div class="menu__nav">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="/Festival.html" class="menu__link">Festival</a>
+                    <a href="festival.html" class="menu__link">Le Festival</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/programme.html" class="menu__link">Programme</a>
+                    <a href="programme.html" class="menu__link menu__link--active">Programme</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/Scène.html" class="menu__link">Scène</a>
+                    <a href="artistes.html" class="menu__link">Artistes</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/infopratique.html" class="menu__link">Info pratique</a>
+                    <a href="scenes.html" class="menu__link">Scènes</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/Contact.html" class="menu__link">Contact</a>
+                    <a href="infos-pratiques.html" class="menu__link">Info pratique</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-<!-- fin menu -->
-
-<!-- Programme -->
-<section class="Programme">
-        <h1 class="Programme__title">Programme</h1>
-        <p class="festival__descrition">Découvrez le programme complet du festival avec tous les artistes
-et horaires</p>
-</section>
-<!-- fin Programme -->
-
-<!-- 20 Decembre -->
- <section>
-      <h2>20 Décembre</h2>
-
-      <div class="artist-card">
-        <h3>Pomme</h3>
-        <p>Pop Indépendante</p>
-        <span>19:00</span><br>
-        <a href="/Pomme.html">Voir le profil →</a>
-      </div>
-
-      <div class="artist-card">
-        <h3>Zaho de Sagazan</h3>
-        <p>French indie</p>
-        <span>20:30</span><br>
-        <a href="/ZahodeSagazan.html">Voir le profil →</a>
-      </div>
-
-      <div class="artist-card">
-        <h3>Voyou</h3>
-        <p>Hip-Hop</p>
-        <span>20:30</span><br>
-        <a href="#">Voir le profil →</a>
-      </div>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header__container">
+            <h1 class="page-header__title">Programme</h1>
+            <p class="page-header__subtitle">Découvrez la programmation complète du festival</p>
+        </div>
     </section>
-<!-- fin 20 Decembre -->
 
-<!-- 21 Decembre -->
-<section>
-      <h2>21 Décembre</h2>
-
-      <div class="artist-card">
-        <h3>ichon</h3>
-        <p>Ppo/R&B</p>
-        <span>19:30</span><br>
-        <a href="#">Voir le profil →</a>
-      </div>
-
-      <div class="artist-card">
-        <h3>Jazzy Bazz</h3>
-        <p>Hip-Hop</p>
-        <span>21:00</span><br>
-        <a href="#">Voir le profil →</a>
-      </div>
-
-      <div class="artist-card">
-        <h3>Luidji</h3>
-        <p>Hip-Hop</p>
-        <span>22:30</span><br>
-        <a href="#">Voir le profil →</a>
-      </div>
+    <!-- Programme Controls -->
+    <section class="programme-controls">
+        <div class="programme-controls__container">
+            <div class="programme-controls__filters">
+                <button class="filter-btn filter-btn--active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="20-dec">20 Décembre</button>
+                <button class="filter-btn" data-filter="21-dec">21 Décembre</button>
+                <button class="filter-btn" data-filter="22-dec">22 Décembre</button>
+                <button class="filter-btn" data-filter="23-dec">23 Décembre</button>
+            </div>
+            <div class="programme-controls__actions">
+                <a href="/assets/programme.pdf" download class="button button--secondary">
+                    Télécharger le programme PDF
+                </a>
+            </div>
+        </div>
     </section>
-<!-- Fin 21 Decembre -->
 
-<!-- 22 Decembre -->
-<section>
-      <h2>22 Décembre</h2>
+    <!-- Programme Content -->
+    <section class="programme-section">
+        <div class="programme-section__container">
+            
+            <!-- Day 1 -->
+            <article class="programme-day" data-day="20-dec">
+                <div class="programme-day__header">
+                    <h2 class="programme-day__title">Jeudi 20 Décembre 2026</h2>
+                    <p class="programme-day__subtitle">Ouverture du festival</p>
+                </div>
+                
+                <div class="programme-day__schedule">
+                    <article class="programme-item">
+                        <div class="programme-item__time">18:00</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">DJ Sunrise</h3>
+                            <p class="programme-item__stage">Scène Principale</p>
+                            <span class="programme-item__genre">Electro</span>
+                        </div>
+                    </article>
 
-      <div class="artist-card">
-        <h3>Fakear</h3>
-        <p>Électronique</p>
-        <span>18:00</span><br>
-        <a href="#">Voir le profil →</a>
-      </div>
+                    <article class="programme-item">
+                        <div class="programme-item__time">20:00</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Les Échos Urbains</h3>
+                            <p class="programme-item__stage">Scène Principale</p>
+                            <span class="programme-item__genre">Hip-Hop</span>
+                        </div>
+                    </article>
 
-      <div class="artist-card">
-        <h3>The Avener</h3>
-        <p>House</p>
-        <span>20:00</span><br>
-        <a href="#">Voir le profil →</a>
-      </div>
+                    <article class="programme-item">
+                        <div class="programme-item__time">22:30</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Neon Dreams</h3>
+                            <p class="programme-item__stage">Scène Électronique</p>
+                            <span class="programme-item__genre">Techno</span>
+                        </div>
+                    </article>
+                </div>
+            </article>
 
-      <div class="artist-card">
-        <h3>Thylacine</h3>
-        <p>Électronique</p>
-        <span>21:30</span><br>
-        <a href="#">Voir le profil →</a>
-      </div>
+            <!-- Day 2 -->
+            <article class="programme-day" data-day="21-dec">
+                <div class="programme-day__header">
+                    <h2 class="programme-day__title">Vendredi 21 Décembre 2026</h2>
+                    <p class="programme-day__subtitle">Programme complet</p>
+                </div>
+                
+                <div class="programme-day__schedule">
+                    <article class="programme-item">
+                        <div class="programme-item__time">16:00</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Acoustic Sessions</h3>
+                            <p class="programme-item__stage">Scène Intimiste</p>
+                            <span class="programme-item__genre">Acoustique</span>
+                        </div>
+                    </article>
+
+                    <article class="programme-item">
+                        <div class="programme-item__time">18:30</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Bass Collective</h3>
+                            <p class="programme-item__stage">Scène Électronique</p>
+                            <span class="programme-item__genre">Drum & Bass</span>
+                        </div>
+                    </article>
+
+                    <article class="programme-item">
+                        <div class="programme-item__time">21:00</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Rock Legend</h3>
+                            <p class="programme-item__stage">Scène Principale</p>
+                            <span class="programme-item__genre">Rock</span>
+                        </div>
+                    </article>
+
+                    <article class="programme-item">
+                        <div class="programme-item__time">23:30</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Midnight Vibes</h3>
+                            <p class="programme-item__stage">Scène Électronique</p>
+                            <span class="programme-item__genre">House</span>
+                        </div>
+                    </article>
+                </div>
+            </article>
+
+            <!-- Day 3 -->
+            <article class="programme-day" data-day="22-dec">
+                <div class="programme-day__header">
+                    <h2 class="programme-day__title">Samedi 22 Décembre 2026</h2>
+                    <p class="programme-day__subtitle">Artistes phares</p>
+                </div>
+                
+                <div class="programme-day__schedule">
+                    <article class="programme-item">
+                        <div class="programme-item__time">15:00</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Urban Poets</h3>
+                            <p class="programme-item__stage">Scène Principale</p>
+                            <span class="programme-item__genre">Hip-Hop</span>
+                        </div>
+                    </article>
+
+                    <article class="programme-item">
+                        <div class="programme-item__time">17:30</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Electro Fusion</h3>
+                            <p class="programme-item__stage">Scène Électronique</p>
+                            <span class="programme-item__genre">Electro</span>
+                        </div>
+                    </article>
+
+                    <article class="programme-item">
+                        <div class="programme-item__time">20:00</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Main Headliner</h3>
+                            <p class="programme-item__stage">Scène Principale</p>
+                            <span class="programme-item__genre">Pop</span>
+                        </div>
+                    </article>
+
+                    <article class="programme-item">
+                        <div class="programme-item__time">22:45</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">After Party Crew</h3>
+                            <p class="programme-item__stage">Scène Électronique</p>
+                            <span class="programme-item__genre">Techno</span>
+                        </div>
+                    </article>
+                </div>
+            </article>
+
+            <!-- Day 4 -->
+            <article class="programme-day" data-day="23-dec">
+                <div class="programme-day__header">
+                    <h2 class="programme-day__title">Dimanche 23 Décembre 2026</h2>
+                    <p class="programme-day__subtitle">Clôture du festival</p>
+                </div>
+                
+                <div class="programme-day__schedule">
+                    <article class="programme-item">
+                        <div class="programme-item__time">14:00</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Chill Out Session</h3>
+                            <p class="programme-item__stage">Scène Intimiste</p>
+                            <span class="programme-item__genre">Ambient</span>
+                        </div>
+                    </article>
+
+                    <article class="programme-item">
+                        <div class="programme-item__time">16:30</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Farewell Band</h3>
+                            <p class="programme-item__stage">Scène Principale</p>
+                            <span class="programme-item__genre">Indie</span>
+                        </div>
+                    </article>
+
+                    <article class="programme-item">
+                        <div class="programme-item__time">19:00</div>
+                        <div class="programme-item__content">
+                            <h3 class="programme-item__artist">Grand Finale</h3>
+                            <p class="programme-item__stage">Scène Principale</p>
+                            <span class="programme-item__genre">Multi-genre</span>
+                        </div>
+                    </article>
+                </div>
+            </article>
+
+        </div>
     </section>
-<!-- Fin 22 Decembre -->
 
-<!-- 23 Decembre -->
-<section>
-      <h2>22 Décembre</h2>
-
-      <div class="artist-card">
-        <h3>Flavien Berger</h3>
-        <p>Pop</p>
-        <span>18:00</span><br>
-        <a href="#">Voir le profil →</a>
-      </div>
-
-      <div class="artist-card">
-        <h3>Kazy Lambist</h3>
-        <p>Électronique</p>
-        <span>19:30</span><br>
-        <a href="#">Voir le profil →</a>
-      </div>
-
-      <div class="artist-card">
-        <h3>Hervé</h3>
-        <p>All</p>
-        <span>21:00</span><br>
-        <a href="#">Voir le profil →</a>
-      </div>
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta__container">
+            <h2 class="cta__title">Ne manquez rien du festival</h2>
+            <div class="cta__description">
+                <p class="cta__text">
+                    Réservez dès maintenant vos billets pour profiter de toute la programmation
+                </p>
+            </div>
+            <a href="/404" class="button button--cta">Acheter vos billets maintenant</a>
+        </div>
     </section>
-<!-- Fin 23 Decembre -->
 
-
-<!-- Added footer section -->
+    <!-- footer -->
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__logo">
                 <img src="assets/icons/logo.svg" alt="Les rives du Territoire" class="footer__logo-image">
             </div>
-
             <div class="footer__menu">
                 <h3 class="footer__menu-title">MENU</h3>
                 <nav class="footer__nav" aria-label="Navigation de pied de page">
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item">
-                            <a href="/chemin ver la page evenement" class="footer__nav-link">ÉVÉNEMENT</a>
+                            <a href="programme.html" class="footer__nav-link">ÉVÉNEMENT</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="/chemin vers la page contact" class="footer__nav-link">CONTACT</a>
+                            <a href="contact.html" class="footer__nav-link">CONTACT</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="/chemin vers la page a propos" class="footer__nav-link">À PROPOS</a>
+                            <a href="festival.html" class="footer__nav-link">À PROPOS</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-
             <div class="footer__social">
                 <h3 class="footer__social-title">NOUS SUIVRE</h3>
                 <div class="footer__social-links">
-                    <!-- Replaced SVG icons with image placeholders -->
                     <a href="https://www.facebook.com/?locale=fr_FR" class="footer__social-link" aria-label="Facebook">
                         <img src="assets/icons/facebook.svg" alt="" aria-hidden="true" class="footer__social-icon">
                     </a>
@@ -241,4 +324,7 @@ et horaires</p>
             </div>
         </div>
     </footer>
-<!-- fin footer -->
+
+</body>
+
+</html>

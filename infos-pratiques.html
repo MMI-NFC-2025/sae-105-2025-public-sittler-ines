@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos Pratiques - Les rives du Territoire</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script type="module" src="src/js/script.js"></script>
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="/assets/icons/logo.svg" alt="Les rives du Territoire" class="header__logo-image">
+                </a>
+            </div>
+            <button class="header__menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false"
+                aria-controls="menu">
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- menu -->
+    <nav class="menu" id="menu" aria-label="Navigation principale">
+        <div class="menu__header">
+            <a href="index.html" class="menu__logo">
+                <img src="/assets/icons/logo.svg" alt="Les rives du Territoire" class="menu__logo-img">
+            </a>
+            <button class="menu__close" aria-label="Fermer le menu">
+                <span class="menu__close-bar"></span>
+                <span class="menu__close-bar"></span>
+            </button>
+        </div>
+        <div class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="festival.html" class="menu__link">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a href="programme.html" class="menu__link">Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a href="artistes.html" class="menu__link">Artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="scenes.html" class="menu__link">Scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="infos-pratiques.html" class="menu__link menu__link--active">Info pratique</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header__container">
+            <h1 class="page-header__title">Infos Pratiques</h1>
+            <p class="page-header__subtitle">Toutes les informations pour préparer votre venue</p>
+        </div>
+    </section>
+
+    <!-- Tarifs Section -->
+    <section class="info-section">
+        <div class="info-section__container">
+            <h2 class="info-section__title">Tarifs & Billetterie</h2>
+            <div class="pricing-grid">
+                <article class="pricing-card">
+                    <h3 class="pricing-card__title">Pass 1 Jour</h3>
+                    <div class="pricing-card__price">45€</div>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">Accès à toutes les scènes</li>
+                        <li class="pricing-card__feature">1 jour au choix</li>
+                        <li class="pricing-card__feature">Entrée et sortie libres</li>
+                    </ul>
+                    <a href="/404" class="button button--primary">Acheter</a>
+                </article>
+
+                <article class="pricing-card pricing-card--featured">
+                    <h3 class="pricing-card__title">Pass 4 Jours</h3>
+                    <div class="pricing-card__price">120€</div>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">Accès à toutes les scènes</li>
+                        <li class="pricing-card__feature">Tous les jours du festival</li>
+                        <li class="pricing-card__feature">Entrée et sortie libres</li>
+                        <li class="pricing-card__feature">Bracelet souvenir</li>
+                    </ul>
+                    <a href="/404" class="button button--primary">Acheter</a>
+                </article>
+
+                <article class="pricing-card">
+                    <h3 class="pricing-card__title">Pass VIP</h3>
+                    <div class="pricing-card__price">250€</div>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">Tous les avantages Pass 4 Jours</li>
+                        <li class="pricing-card__feature">Accès zone VIP</li>
+                        <li class="pricing-card__feature">Rencontre avec artistes</li>
+                        <li class="pricing-card__feature">Goodies exclusifs</li>
+                    </ul>
+                    <a href="/404" class="button button--primary">Acheter</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hebergement Section -->
+    <section class="info-section info-section--dark">
+        <div class="info-section__container">
+            <h2 class="info-section__title">Hébergements</h2>
+            <div class="accommodation-grid">
+                <article class="accommodation-card">
+                    <h3 class="accommodation-card__title">Camping du Festival</h3>
+                    <p class="accommodation-card__text">
+                        Profitez de notre camping officiel situé à 5 minutes à pied du site du festival.
+                        Sanitaires, douches chaudes et food trucks sur place.
+                    </p>
+                    <p class="accommodation-card__price">20€ / nuit</p>
+                </article>
+
+                <article class="accommodation-card">
+                    <h3 class="accommodation-card__title">Hôtels Partenaires</h3>
+                    <p class="accommodation-card__text">
+                        Bénéficiez de tarifs préférentiels dans nos hôtels partenaires à Belfort.
+                        Navettes gratuites vers le festival.
+                    </p>
+                    <p class="accommodation-card__price">À partir de 65€ / nuit</p>
+                </article>
+
+                <article class="accommodation-card">
+                    <h3 class="accommodation-card__title">Locations Saisonnières</h3>
+                    <p class="accommodation-card__text">
+                        Découvrez notre sélection d'appartements et maisons à louer à proximité du festival.
+                    </p>
+                    <p class="accommodation-card__price">Tarifs variables</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transport Section -->
+    <section class="info-section">
+        <div class="info-section__container">
+            <h2 class="info-section__title">Comment venir</h2>
+            <div class="transport-grid">
+                <article class="transport-card">
+                    <div class="transport-card__icon">
+                        <img src="/placeholder.svg?height=60&width=60" 
+                             alt="" aria-hidden="true" class="transport-card__icon-img">
+                    </div>
+                    <h3 class="transport-card__title">En Train</h3>
+                    <p class="transport-card__text">
+                        Gare de Belfort à 10 minutes en navette gratuite du festival.
+                        TGV directs depuis Paris (2h30), Lyon (2h) et Strasbourg (1h30).
+                    </p>
+                </article>
+
+                <article class="transport-card">
+                    <div class="transport-card__icon">
+                        <img src="/placeholder.svg?height=60&width=60" 
+                             alt="" aria-hidden="true" class="transport-card__icon-img">
+                    </div>
+                    <h3 class="transport-card__title">En Voiture</h3>
+                    <p class="transport-card__text">
+                        Parkings gratuits disponibles. Suivre direction "Berges de la Savoureuse".
+                        Covoiturage encouragé avec places réservées.
+                    </p>
+                </article>
+
+                <article class="transport-card">
+                    <div class="transport-card__icon">
+                        <img src="/placeholder.svg?height=60&width=60" 
+                             alt="" aria-hidden="true" class="transport-card__icon-img">
+                    </div>
+                    <h3 class="transport-card__title">Navettes</h3>
+                    <p class="transport-card__text">
+                        Navettes gratuites depuis la gare, le centre-ville et les hôtels partenaires.
+                        Circulation toutes les 15 minutes.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-section__container">
+            <h2 class="faq-section__title">Questions Fréquentes</h2>
+            <div class="faq-list">
+                
+                <article class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Puis-je apporter ma propre nourriture et boissons ?</span>
+                        <span class="faq-item__icon">+</span>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>
+                            Oui, vous pouvez apporter votre nourriture. Les boissons alcoolisées sont interdites.
+                            De nombreux stands de restauration et bars sont disponibles sur place.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Le festival est-il accessible aux personnes à mobilité réduite ?</span>
+                        <span class="faq-item__icon">+</span>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>
+                            Oui, le site est entièrement accessible. Des emplacements réservés sont disponibles
+                            devant chaque scène. Contactez-nous pour organiser votre venue.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Puis-je venir avec des enfants ?</span>
+                        <span class="faq-item__icon">+</span>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>
+                            Les enfants de moins de 12 ans accompagnés d'un adulte bénéficient d'un accès gratuit.
+                            Un espace famille avec animations est prévu l'après-midi.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Que faire si je perds mon bracelet ?</span>
+                        <span class="faq-item__icon">+</span>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>
+                            Rendez-vous à l'accueil billetterie avec votre pièce d'identité et votre confirmation
+                            d'achat. Un nouveau bracelet vous sera fourni moyennant des frais de 10€.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Y a-t-il un service de consigne ?</span>
+                        <span class="faq-item__icon">+</span>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>
+                            Oui, un service de consigne sécurisé est disponible à l'entrée du festival.
+                            Tarif: 3€ pour une petite consigne, 5€ pour une grande.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta__container">
+            <h2 class="cta__title">Prêt pour l'aventure ?</h2>
+            <div class="cta__description">
+                <p class="cta__text">
+                    Toutes les informations sont réunies, il ne vous reste plus qu'à réserver vos billets
+                </p>
+            </div>
+            <a href="/404" class="button button--cta">Acheter vos billets maintenant</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <img src="assets/icons/logo.svg" alt="Les rives du Territoire" class="footer__logo-image">
+            </div>
+            <div class="footer__menu">
+                <h3 class="footer__menu-title">MENU</h3>
+                <nav class="footer__nav" aria-label="Navigation de pied de page">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="programme.html" class="footer__nav-link">ÉVÉNEMENT</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="contact.html" class="footer__nav-link">CONTACT</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="festival.html" class="footer__nav-link">À PROPOS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__social">
+                <h3 class="footer__social-title">NOUS SUIVRE</h3>
+                <div class="footer__social-links">
+                    <a href="https://www.facebook.com/?locale=fr_FR" class="footer__social-link" aria-label="Facebook">
+                        <img src="assets/icons/facebook.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/" class="footer__social-link" aria-label="Instagram">
+                        <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                    <a href="https://x.com/?lang=fr" class="footer__social-link" aria-label="Twitter">
+                        <img src="assets/icons/x.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                    <a href="https://www.youtube.com/" class="footer__social-link" aria-label="YouTube">
+                        <img src="assets/icons/youtube.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

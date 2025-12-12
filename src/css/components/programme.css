@@ -1,0 +1,144 @@
+/* Programme Page Components - BEM Methodology */
+
+/* Programme Controls */
+.programme-controls {
+  background-color: var(--color-blackCard);
+  padding: 2rem 1.5rem;
+}
+
+.programme-controls__container {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.programme-controls__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.programme-controls__actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* Filter Button */
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  font-family: var(--typo-body);
+  font-size: var(--fs-b3);
+  font-weight: var(--weight-regular);
+  color: var(--color-white);
+  background-color: transparent;
+  border: 2px solid var(--color-gray);
+  border-radius: 3.125rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn--active {
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+  color: var(--color-black);
+}
+
+/* Programme Section */
+.programme-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-white);
+}
+
+.programme-section__container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/* Programme Day */
+.programme-day {
+  margin-bottom: 3rem;
+}
+
+.programme-day__header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-yellow);
+}
+
+.programme-day__title {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h2);
+  font-weight: var(--weight-blod);
+  color: var(--color-black);
+  margin-bottom: 0.5rem;
+  line-height: var(--line-height-1);
+}
+
+.programme-day__subtitle {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b1);
+  color: var(--color-gray);
+  line-height: var(--line-height-2);
+  font-weight: var(--weight-regular);
+}
+
+.programme-day__schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Programme Item */
+.programme-item {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  background-color: var(--color-blackCard);
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.programme-item__time {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h2);
+  font-weight: var(--weight-blod);
+  color: var(--color-yellow);
+  min-width: 100px;
+  line-height: var(--line-height-1);
+}
+
+.programme-item__content {
+  flex: 1;
+}
+
+.programme-item__artist {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h3);
+  font-weight: var(--weight-blod);
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+  line-height: var(--line-height-1);
+}
+
+.programme-item__stage {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b2);
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+  font-weight: var(--weight-regular);
+}
+
+.programme-item__genre {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-family: var(--typo-body);
+  font-size: var(--fs-b3);
+  color: var(--color-black);
+  background-color: var(--color-yellow);
+  border-radius: 1rem;
+  font-weight: var(--weight-regular);
+}
+

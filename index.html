@@ -10,11 +10,11 @@
     <!-- Added script.js -->
     <script type="module" src="src/js/script.js"></script>
     <!--favicons-->
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/web-app-manifest-192x192.png" />
     <!-- add typo-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -29,7 +29,9 @@
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                <img src="assets/icons/logo.svg" alt="Les rives du Territoire" class="header__logo-image">
+                <a href="index.html">
+                    <img src="/assets/icons/logo.svg" alt="Les rives du Territoire" class="header__logo-image">
+                </a>
             </div>
             <button class="header__menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false"
                 aria-controls="menu">
@@ -48,7 +50,7 @@
     <nav class="menu" id="menu" aria-label="Navigation principale">
         <div class="menu__header">
             <a href="index.html" class="menu__logo">
-                <img src="assets/icons/logo.svg" alt="Les rives du Territoire" class="menu__logo-img">
+                <img src="/assets/icons/logo.svg" alt="Les rives du Territoire" class="menu__logo-img">
             </a>
 
             <button class="menu__close" aria-label="Fermer le menu">
@@ -60,19 +62,22 @@
         <div class="menu__nav">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="/Festival.html" class="menu__link">Festival</a>
+                    <a href="festival.html" class="menu__link">Le Festival</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/programme.html" class="menu__link">Programme</a>
+                    <a href="programme.html" class="menu__link">Programme</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/Scène.html" class="menu__link">Scène</a>
+                    <a href="artistes.html" class="menu__link">Artistes</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/infopratique.html" class="menu__link">Info pratique</a>
+                    <a href="scenes.html" class="menu__link">Scènes</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/Contact.html" class="menu__link">Contact</a>
+                    <a href="infos-pratiques.html" class="menu__link">Info pratique</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -85,7 +90,7 @@
     <section class="hero">
         <div class="hero__background">
             <!-- Updated placeholder query to show vibrant concert lights -->
-            <img src="assets/img/hero.avif" alt="Foule en concert au festival Les Rives du Territoire"
+            <img src="/assets/img/hero.avif" alt="Foule en concert au festival Les Rives du Territoire"
                 class="hero__background-image">
         </div>
 
@@ -120,7 +125,7 @@
     </section>
 
 
-<!-- fin menu -->
+<!-- fin hero -->
 
     <!-- Added card navigation section -->
     <!-- card 1 -->
@@ -128,7 +133,7 @@
         <div class="card-navigation__container">
             <article class="card-navigation__card">
                 <div class="card-navigation__image-wrapper">
-                    <img src="assets/img/leFestival_fond.avif" alt="Scène du festival Les Rives du Territoire"
+                    <img src="/assets/img/leFestival_fond.avif" alt="Scène du festival Les Rives du Territoire"
                         class="card-navigation__image">
                 </div>
                 <div class="card-navigation__content">
@@ -136,7 +141,7 @@
                     <p class="card-navigation__description">Découvrez l'histoire et les valeurs de Les Rives du
                         Territoire
                     </p>
-                    <a href="/chemin vers la page festival" class="card-navigation__link">
+                    <a href="festival.html" class="card-navigation__link">
                         Découvrir
                         <img src="assets/icons/fleche_btn.svg" alt="" aria-hidden="true" class="card-navigation__arrow">
                     </a>
@@ -150,15 +155,15 @@
         <div class="card-navigation__container">
             <article class="card-navigation__card">
                 <div class="card-navigation__image-wrapper">
-                    <img src="assets/img/programe_fond.avif"
+                    <img src="/assets/img/programe_fond.avif"
                         alt="Visuel du programme du festival Les Rives du Territoire" class="card-navigation__image">
                 </div>
                 <div class="card-navigation__content">
-                    <h2 class="card-navigation__title">Le Festival</h2>
-                    <p class="card-navigation__description">Découvrez l'histoire et les valeurs de Les Rives du
-                        Territoire
+                    <h2 class="card-navigation__title">Programme</h2>
+                    <p class="card-navigation__description">Découvrez le programme complet du festival avec tous les
+                        artistes et horaires
                     </p>
-                    <a href="#festival" class="card-navigation__link">
+                    <a href="programme.html" class="card-navigation__link">
                         Découvrir
                         <img src="assets/icons/fleche_btn.svg" alt="" aria-hidden="true" class="card-navigation__arrow">
                     </a>
@@ -173,16 +178,13 @@
         <div class="card-navigation__container">
             <article class="card-navigation__card">
                 <div class="card-navigation__image-wrapper">
-                    <img src="assets/img/lesArtistes_fond.avif"
+                    <img src="/assets/img/lesArtistes_fond.avif"
                         alt="Artiste sur scène lors du festival Les Rives du Territoire" class="card-navigation__image">
                 </div>
                 <div class="card-navigation__content">
-                    <h2 class="card-navigation__title">Programme</h2>
-                    <p class="card-navigation__description">Découvrez le programme complet du festival avec tous les
-                        artistes
-                        et horaires
-                    </p>
-                    <a href="/chemin vers la page festivale" class="card-navigation__link">
+                    <h2 class="card-navigation__title">Les Artistes</h2>
+                    <p class="card-navigation__description">Découvrez les talents qui animeront le festival</p>
+                    <a href="artistes.html" class="card-navigation__link">
                         Découvrir
                         <img src="assets/icons/fleche_btn.svg" alt="" aria-hidden="true" class="card-navigation__arrow">
                     </a>
@@ -202,9 +204,9 @@
                         class="card-navigation__image">
                 </div>
                 <div class="card-navigation__content">
-                    <h2 class="card-navigation__title">Les Artistes</h2>
-                    <p class="card-navigation__description">Découvrez les talents qui animeront le festival</p>
-                    <a href="#festival" class="card-navigation__link">
+                    <h2 class="card-navigation__title">Contact</h2>
+                    <p class="card-navigation__description">Une question ? Contactez-nous</p>
+                    <a href="contact.html" class="card-navigation__link">
                         Découvrir
                         <img src="assets/icons/fleche_btn.svg" alt="" aria-hidden="true" class="card-navigation__arrow">
                     </a>
@@ -273,13 +275,13 @@
                 <nav class="footer__nav" aria-label="Navigation de pied de page">
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item">
-                            <a href="/chemin ver la page evenement" class="footer__nav-link">ÉVÉNEMENT</a>
+                            <a href="programme.html" class="footer__nav-link">ÉVÉNEMENT</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="/chemin vers la page contact" class="footer__nav-link">CONTACT</a>
+                            <a href="contact.html" class="footer__nav-link">CONTACT</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="/chemin vers la page a propos" class="footer__nav-link">À PROPOS</a>
+                            <a href="festival.html" class="footer__nav-link">À PROPOS</a>
                         </li>
                     </ul>
                 </nav>

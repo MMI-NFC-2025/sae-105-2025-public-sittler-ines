@@ -44,3 +44,72 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 })
+
+
+// Programme Filter Functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter-btn")
+  const programmeDays = document.querySelectorAll(".programme-day")
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter
+
+      // Update active button
+      filterButtons.forEach((btn) => btn.classList.remove("filter-btn--active"))
+      button.classList.add("filter-btn--active")
+
+      // Filter programme days
+      programmeDays.forEach((day) => {
+        if (filter === "all" || day.dataset.day === filter) {
+          day.style.display = "block"
+        } else {
+          day.style.display = "none"
+        }
+      })
+    })
+  })
+})
+
+
+// FAQ Accordion Functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const faqQuestions = document.querySelectorAll(".faq-item__question")
+
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const isExpanded = question.getAttribute("aria-expanded") === "true"
+
+      // Close all other FAQs
+      faqQuestions.forEach((q) => {
+        q.setAttribute("aria-expanded", "false")
+      })
+
+      // Toggle current FAQ
+      question.setAttribute("aria-expanded", !isExpanded)
+    })
+  })
+})
+
+// Contact Form Functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const contactForm = document.getElementById("contactForm")
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault()
+
+      // Get form data
+      const formData = new FormData(contactForm)
+      const data = Object.fromEntries(formData)
+
+      console.log("[v0] Form submitted with data:", data)
+
+      // Show success message (in real app, this would send to server)
+      alert("Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.")
+
+      // Reset form
+      contactForm.reset()
+    })
+  }
+})

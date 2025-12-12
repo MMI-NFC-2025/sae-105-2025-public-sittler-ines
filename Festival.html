@@ -4,32 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les rives du Territoire</title>
-    <!-- add css -->
+    <title>Le Festival - Les rives du Territoire</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <!-- Added script.js -->
     <script type="module" src="src/js/script.js"></script>
-    <!--favicons-->
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <!-- add typo-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
-
 </head>
 
 <body>
 
-<!-- header -->
-
+    <!-- header -->
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                <img src="assets/icons/logo.svg" alt="Les rives du Territoire" class="header__logo-image">
+                <a href="index.html">
+                    <img src="/assets/icons/logo.svg" alt="Les rives du Territoire" class="header__logo-image">
+                </a>
             </div>
             <button class="header__menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false"
                 aria-controls="menu">
@@ -40,178 +36,234 @@
         </div>
     </header>
 
-
-<!-- fin header -->
-
-
     <!-- menu -->
     <nav class="menu" id="menu" aria-label="Navigation principale">
         <div class="menu__header">
             <a href="index.html" class="menu__logo">
-                <img src="assets/icons/logo.svg" alt="Les rives du Territoire" class="menu__logo-img">
+                <img src="/assets/icons/logo.svg" alt="Les rives du Territoire" class="menu__logo-img">
             </a>
-
             <button class="menu__close" aria-label="Fermer le menu">
                 <span class="menu__close-bar"></span>
                 <span class="menu__close-bar"></span>
             </button>
         </div>
-
         <div class="menu__nav">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="/Festival.html" class="menu__link">Festival</a>
+                    <a href="festival.html" class="menu__link menu__link--active">Le Festival</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/programme.html" class="menu__link">Programme</a>
+                    <a href="programme.html" class="menu__link">Programme</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/Scène.html" class="menu__link">Scène</a>
+                    <a href="artistes.html" class="menu__link">Artistes</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/infopratique.html" class="menu__link">Info pratique</a>
+                    <a href="scenes.html" class="menu__link">Scènes</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/Contact.html" class="menu__link">Contact</a>
+                    <a href="infos-pratiques.html" class="menu__link">Info pratique</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-<!-- fin menu -->
-
-<!-- Festival -->
-
-<section class="festival">
-        <h1 class="festival__title">Le Festival</h1>
-        <p class="festival__descrition">Découvrez l'histoire, les valeurs et l'équipe derrière Les Rives du
-Territoire</p>
-</section>
-<!-- fin Festival -->
-
-<!-- histoire du festival -->
- <section class="festival__section">
-        <div class="histoire_du_festival">
-            <h2 class="festival__subtitle">Histoire du festival</h2>
-        <div>
-            <p> Les Rives du Territoire est un festival de musiques actuelles et de culture urbaine créé en
-        2026. Né de la volonté de mettre en avant les talents émergents locaux et de créer une
-        fusion unique entre musique, street-art et écologie urbaine.</p>
-            <p> Situé aux Berges de la Savoureuse à Belfort, le festival se déroule en hiver, créant une
-atmosphère festive et conviviale pendant la période hivernale. C'est un événement plein
-air unique qui célèbre la jeunesse, la créativité et la culture urbaine.</p>
-        <p> Avec plus de 30 artistes représentant le hip-hop, l'électro et la pop indépendante, le festival attire un public varié : jeunes étudiants, familles curieuses et adultes passionnés le musique.</p>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header__container">
+            <h1 class="page-header__title">Le Festival</h1>
+            <p class="page-header__subtitle">Découvrez l'histoire et les valeurs de Les Rives du Territoire</p>
         </div>
-<div>
- <a href="/programme.html" class="button button--cta">Découvrir le programme</a>
- 
-</section>
+    </section>
 
-<!-- valeurs -->
+    <!-- Historique Section -->
+    <section class="festival-section">
+        <div class="festival-section__container">
+            <article class="festival-article">
+                <h2 class="festival-article__title">Notre Histoire</h2>
+                <div class="festival-article__content">
+                    <p class="festival-article__text">
+                        Créé en 2020, le festival Les Rives du Territoire est né de la volonté de célébrer la diversité
+                        culturelle et musicale de notre région. Installé sur les magnifiques berges de la Savoureuse à Belfort,
+                        notre festival est devenu un rendez-vous incontournable pour les amateurs de musique et de culture urbaine.
+                    </p>
+                    <p class="festival-article__text">
+                        Chaque année, nous accueillons des milliers de festivaliers venus découvrir des artistes émergents
+                        et confirmés dans une ambiance unique et conviviale. Notre objectif est de créer un espace de partage
+                        et de découverte où la musique transcende les frontières.
+                    </p>
+                </div>
+                <div class="festival-article__image">
+                    <img src="/placeholder.svg?height=400&width=800" 
+                         alt="Public du festival sur les berges" class="festival-article__img">
+                </div>
+            </article>
+        </div>
+    </section>
 
-<section class="valeurs">
-        <div class="valeurs__content">
-            <h2 class="festival__subtitle">Nos valeurs</h2>
-    </div>
+    <!-- Equipe Section -->
+    <section class="festival-section festival-section--dark">
+        <div class="festival-section__container">
+            <h2 class="festival-section__title">Notre Équipe</h2>
+            <p class="festival-section__intro">
+                Une équipe passionnée au service de votre expérience festivalière
+            </p>
+            <div class="team-grid">
+                <article class="team-card">
+                    <div class="team-card__image">
+                        <img src="/assets/img/mariedubois.avif" 
+                             alt="Marie Dubois" class="team-card__img">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Marie Dubois</h3>
+                        <p class="team-card__role">Directrice Artistique</p>
+                        <p class="team-card__description">
+                            Passionnée de musique depuis toujours, Marie orchestre la programmation artistique du festival.
+                        </p>
+                    </div>
+                </article>
 
+                <article class="team-card">
+                    <div class="team-card__image">
+                        <img src="/assets/img/Jeanmartin.jpg" 
+                             alt="Jean Martin" class="team-card__img">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Jean Martin</h3>
+                        <p class="team-card__role">Directeur Technique</p>
+                        <p class="team-card__description">
+                            Expert en sonorisation, Jean assure la qualité technique de chaque performance.
+                        </p>
+                    </div>
+                </article>
 
-    <div class="card">
-        <img src="assets/icons/Créativité.svg" class="heart-icon"/>
-      <div><h3>Créativité</h3></div>
-      <p>
-        Encourager l’expression artistique sous toutes ses formes,
-        mettre en avant les jeunes talents locaux et émergents.
-      </p>
-    </div>
+                <article class="team-card">
+                    <div class="team-card__image">
+                        <img src="/assets/img/sophiebernard.avif" 
+                             alt="Sophie Bernard" class="team-card__img">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Sophie Bernard</h3>
+                        <p class="team-card__role">Responsable Production</p>
+                        <p class="team-card__description">
+                            Sophie coordonne l'ensemble de la logistique pour garantir le bon déroulement de l'événement.
+                        </p>
+                    </div>
+                </article>
 
-    <div class="card">
-        <img src="assets/icons/Proximité.svg" class="social-icon"/>
+                <article class="team-card">
+                    <div class="team-card__image">
+                        <img src="/placeholder.svg?height=300&width=300" 
+                             alt="Lucas Petit" class="team-card__img">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Lucas Petit</h3>
+                        <p class="team-card__role">Responsable Communication</p>
+                        <p class="team-card__description">
+                            Lucas développe la notoriété du festival et assure la relation avec le public.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-      <div><h3>Proximité</h3></div>
-      <p>
-        Raffermir les liens entre les artistes et le public local,
-        créer une communauté autour de la musique et la culture.
-      </p>
-    </div>
+    <!-- Charte Section -->
+    <section class="festival-section">
+        <div class="festival-section__container">
+            <h2 class="festival-section__title">Notre Charte & Valeurs</h2>
+            <div class="charter">
+                <article class="charter-item">
+                    <div class="charter-item__icon">
+                        <img src="/placeholder.svg?height=80&width=80" 
+                             alt="" aria-hidden="true" class="charter-item__icon-img">
+                    </div>
+                    <h3 class="charter-item__title">Diversité Culturelle</h3>
+                    <p class="charter-item__text">
+                        Nous célébrons la richesse de toutes les cultures musicales et promouvons la découverte
+                        d'artistes de tous horizons.
+                    </p>
+                </article>
 
-    <div class="card">
-        <img src="assets/icons/durabillité.svg" class="leaf-icon"/>
-      <div><h3>Durabilité</h3></div>
-    </div>
-    <p>
-       Promouvoir une démarche éco-responsable, utiliser des supports recyclés et sensibiliser le public.
-      </p>
-    </div>
-  </section>
+                <article class="charter-item">
+                    <div class="charter-item__icon">
+                        <img src="/placeholder.svg?height=80&width=80" 
+                             alt="" aria-hidden="true" class="charter-item__icon-img">
+                    </div>
+                    <h3 class="charter-item__title">Éco-responsabilité</h3>
+                    <p class="charter-item__text">
+                        Notre engagement pour l'environnement se traduit par des actions concrètes : tri des déchets,
+                        gobelets réutilisables, et partenaires locaux.
+                    </p>
+                </article>
 
-<!-- fin valeurs -->
+                <article class="charter-item">
+                    <div class="charter-item__icon">
+                        <img src="/placeholder.svg?height=80&width=80" 
+                             alt="" aria-hidden="true" class="charter-item__icon-img">
+                    </div>
+                    <h3 class="charter-item__title">Accessibilité</h3>
+                    <p class="charter-item__text">
+                        Le festival est accessible à tous avec des aménagements spécifiques pour les personnes
+                        à mobilité réduite et des tarifs solidaires.
+                    </p>
+                </article>
 
-<!-- charte -->
+                <article class="charter-item">
+                    <div class="charter-item__icon">
+                        <img src="/placeholder.svg?height=80&width=80" 
+                             alt="" aria-hidden="true" class="charter-item__icon-img">
+                    </div>
+                    <h3 class="charter-item__title">Convivialité</h3>
+                    <p class="charter-item__text">
+                        Nous créons un espace de partage et de rencontre où règnent bienveillance et respect mutuel.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
 
- <section class="charte-section">
-    <div class="charte_title">
-        <h2 class="center">Charte du Festival</h2>
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta__container">
+            <h2 class="cta__title">Rejoignez l'aventure</h2>
+            <div class="cta__description">
+                <p class="cta__text">
+                    Vivez une expérience unique sur les Rives du Territoire du 20 au 23 décembre 2026
+                </p>
+            </div>
+            <a href="/404" class="button button--cta">Acheter vos billets maintenant</a>
+        </div>
+    </section>
 
-    <div>
-    <h4>Thématique 2026</h4>
-    <p>
-      "Ensemble, vibrons au rythme du territoire" : une célébration de l’unité,
-      de la créativité et de l’énergie collective autour de la musique
-      et de la culture urbaine.
-    </p>
-
-    <h4>Engagement Environnemental</h4>
-    <p>
-      Nous nous engageons à minimiser l’impact environnemental du festival
-      en utilisant des supports recyclés, en encourageant les transports collectifs
-      et en sensibilisant le public à la durabilité.
-    </p>
-
-    <h4>Inclusivité et Accessibilité</h4>
-    <p>
-      Le festival est ouvert à tous, avec un accent particulier sur l’accessibilité
-      pour les personnes en situation de handicap et la représentation
-      de la diversité culturelle.
-    </p>
-
-    <h4>Soutien aux Talents Locaux</h4>
-    <p>
-      Nous mettons en avant les artistes émergents de la région
-      et créons des opportunités pour les jeunes talents de se faire connaître.
-    </p>
-    </div>
-  </section>
-
-<!-- charte -->
-
-<!-- Added footer section -->
+    <!-- footer -->
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__logo">
                 <img src="assets/icons/logo.svg" alt="Les rives du Territoire" class="footer__logo-image">
             </div>
-
             <div class="footer__menu">
                 <h3 class="footer__menu-title">MENU</h3>
                 <nav class="footer__nav" aria-label="Navigation de pied de page">
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item">
-                            <a href="/chemin ver la page evenement" class="footer__nav-link">ÉVÉNEMENT</a>
+                            <a href="programme.html" class="footer__nav-link">ÉVÉNEMENT</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="/chemin vers la page contact" class="footer__nav-link">CONTACT</a>
+                            <a href="contact.html" class="footer__nav-link">CONTACT</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="/chemin vers la page a propos" class="footer__nav-link">À PROPOS</a>
+                            <a href="festival.html" class="footer__nav-link">À PROPOS</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-
             <div class="footer__social">
                 <h3 class="footer__social-title">NOUS SUIVRE</h3>
                 <div class="footer__social-links">
-                    <!-- Replaced SVG icons with image placeholders -->
                     <a href="https://www.facebook.com/?locale=fr_FR" class="footer__social-link" aria-label="Facebook">
                         <img src="assets/icons/facebook.svg" alt="" aria-hidden="true" class="footer__social-icon">
                     </a>
@@ -228,4 +280,7 @@ air unique qui célèbre la jeunesse, la créativité et la culture urbaine.</p>
             </div>
         </div>
     </footer>
-<!-- fin footer -->
+
+</body>
+
+</html>

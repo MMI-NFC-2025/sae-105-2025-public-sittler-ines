@@ -1,0 +1,149 @@
+/* Contact Page Components - BEM Methodology */
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-white);
+}
+
+.contact-section__container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+  background-color: var(--color-blackCard);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.contact-form__title {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h2);
+  font-weight: var(--weight-blod);
+  color: var(--color-white);
+  margin-bottom: 2rem;
+  line-height: var(--line-height-1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group__label {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b2);
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+  font-weight: var(--weight-regular);
+}
+
+.form-group__input,
+.form-group__select,
+.form-group__textarea {
+  padding: 1rem;
+  font-family: var(--typo-body);
+  font-size: var(--fs-b2);
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border: 2px solid var(--color-gray);
+  border-radius: 0.5rem;
+  font-weight: var(--weight-regular);
+}
+
+.form-group__input:focus,
+.form-group__select:focus,
+.form-group__textarea:focus {
+  outline: none;
+  border-color: var(--color-yellow);
+}
+
+.form-group__textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Contact Info */
+.contact-info {
+  background-color: var(--color-blackCard);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.contact-info__title {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h2);
+  font-weight: var(--weight-blod);
+  color: var(--color-white);
+  margin-bottom: 2rem;
+  line-height: var(--line-height-1);
+}
+
+.contact-info-item {
+  margin-bottom: 2rem;
+}
+
+.contact-info-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info-item__title {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h3);
+  font-weight: var(--weight-blod);
+  color: var(--color-yellow);
+  margin-bottom: 0.5rem;
+  line-height: var(--line-height-1);
+}
+
+.contact-info-item__text {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b2);
+  color: var(--color-white);
+  line-height: var(--line-height-2);
+  font-weight: var(--weight-regular);
+}
+
+.contact-info-item__link {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Contact Socials */
+.contact-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-black);
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.contact-socials__icon {
+  width: 24px;
+  height: 24px;
+}

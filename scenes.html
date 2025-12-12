@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Les rives du Territoire</title>
+    <title>Scènes - Les rives du Territoire</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script type="module" src="src/js/script.js"></script>
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
@@ -59,13 +59,13 @@
                     <a href="artistes.html" class="menu__link">Artistes</a>
                 </li>
                 <li class="menu__item">
-                    <a href="scenes.html" class="menu__link">Scènes</a>
+                    <a href="scenes.html" class="menu__link menu__link--active">Scènes</a>
                 </li>
                 <li class="menu__item">
                     <a href="infos-pratiques.html" class="menu__link">Info pratique</a>
                 </li>
                 <li class="menu__item">
-                    <a href="contact.html" class="menu__link menu__link--active">Contact</a>
+                    <a href="contact.html" class="menu__link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -74,104 +74,76 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="page-header__container">
-            <h1 class="page-header__title">Contactez-nous</h1>
-            <p class="page-header__subtitle">Nous sommes à votre écoute</p>
+            <h1 class="page-header__title">Les Scènes</h1>
+            <p class="page-header__subtitle">Découvrez les différents espaces du festival</p>
         </div>
     </section>
 
-    <!-- Contact Form & Info -->
-    <section class="contact-section">
-        <div class="contact-section__container">
+    <!-- Stages Grid -->
+    <section class="stages-section">
+        <div class="stages-section__container">
             
-            <div class="contact-content">
-                <!-- Contact Form -->
-                <div class="contact-form-wrapper">
-                    <h2 class="contact-form__title">Envoyez-nous un message</h2>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name" class="form-group__label">Nom complet</label>
-                            <input type="text" id="name" name="name" class="form-group__input" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email" class="form-group__label">Email</label>
-                            <input type="email" id="email" name="email" class="form-group__input" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject" class="form-group__label">Sujet</label>
-                            <select id="subject" name="subject" class="form-group__select" required>
-                                <option value="">Choisir un sujet</option>
-                                <option value="billetterie">Billetterie</option>
-                                <option value="programmation">Programmation</option>
-                                <option value="acces">Accès et transport</option>
-                                <option value="hebergement">Hébergement</option>
-                                <option value="partenariat">Partenariat</option>
-                                <option value="presse">Presse</option>
-                                <option value="autre">Autre</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message" class="form-group__label">Message</label>
-                            <textarea id="message" name="message" rows="6" class="form-group__textarea" required></textarea>
-                        </div>
-
-                        <button type="submit" class="button button--primary">Envoyer le message</button>
-                    </form>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <h2 class="contact-info__title">Nos coordonnées</h2>
-                    
-                    <div class="contact-info-item">
-                        <h3 class="contact-info-item__title">Adresse</h3>
-                        <p class="contact-info-item__text">
-                            Les Rives du Territoire<br>
-                            Berges de la Savoureuse<br>
-                            90000 Belfort, France
+            <article class="stage-card">
+                <a href="scene-detail.html?id=1" class="stage-card__link">
+                    <div class="stage-card__image">
+                        <img src="/placeholder.svg?height=500&width=800" 
+                             alt="Scène Principale" class="stage-card__img">
+                    </div>
+                    <div class="stage-card__content">
+                        <h2 class="stage-card__name">Scène Principale</h2>
+                        <p class="stage-card__description">
+                            La plus grande scène du festival accueille les têtes d'affiche et les performances les plus attendues.
                         </p>
+                        <span class="stage-card__capacity">Capacité: 5000 personnes</span>
                     </div>
+                </a>
+            </article>
 
-                    <div class="contact-info-item">
-                        <h3 class="contact-info-item__title">Email</h3>
-                        <p class="contact-info-item__text">
-                            <a href="mailto:contact@rivesterritoire.fr" class="contact-info-item__link">
-                                contact@rivesterritoire.fr
-                            </a>
+            <article class="stage-card">
+                <a href="scene-detail.html?id=2" class="stage-card__link">
+                    <div class="stage-card__image">
+                        <img src="/placeholder.svg?height=500&width=800" 
+                             alt="Scène Électronique" class="stage-card__img">
+                    </div>
+                    <div class="stage-card__content">
+                        <h2 class="stage-card__name">Scène Électronique</h2>
+                        <p class="stage-card__description">
+                            Dédiée aux musiques électroniques, cette scène propose des sons techno, house et electro jusqu'au bout de la nuit.
                         </p>
+                        <span class="stage-card__capacity">Capacité: 3000 personnes</span>
                     </div>
+                </a>
+            </article>
 
-                    <div class="contact-info-item">
-                        <h3 class="contact-info-item__title">Téléphone</h3>
-                        <p class="contact-info-item__text">
-                            <a href="tel:+33384220000" class="contact-info-item__link">
-                                +33 (0)3 84 22 00 00
-                            </a>
+            <article class="stage-card">
+                <a href="scene-detail.html?id=3" class="stage-card__link">
+                    <div class="stage-card__image">
+                        <img src="/placeholder.svg?height=500&width=800" 
+                             alt="Scène Intimiste" class="stage-card__img">
+                    </div>
+                    <div class="stage-card__content">
+                        <h2 class="stage-card__name">Scène Intimiste</h2>
+                        <p class="stage-card__description">
+                            Un espace plus cosy pour des performances acoustiques et des découvertes artistiques en petit comité.
                         </p>
+                        <span class="stage-card__capacity">Capacité: 500 personnes</span>
                     </div>
+                </a>
+            </article>
 
-                    <div class="contact-info-item">
-                        <h3 class="contact-info-item__title">Suivez-nous</h3>
-                        <div class="contact-socials">
-                            <a href="https://www.facebook.com/?locale=fr_FR" class="contact-socials__link" aria-label="Facebook">
-                                <img src="assets/icons/facebook.svg" alt="" aria-hidden="true" class="contact-socials__icon">
-                            </a>
-                            <a href="https://www.instagram.com/" class="contact-socials__link" aria-label="Instagram">
-                                <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" class="contact-socials__icon">
-                            </a>
-                            <a href="https://x.com/?lang=fr" class="contact-socials__link" aria-label="Twitter">
-                                <img src="assets/icons/x.svg" alt="" aria-hidden="true" class="contact-socials__icon">
-                            </a>
-                            <a href="https://www.youtube.com/" class="contact-socials__link" aria-label="YouTube">
-                                <img src="assets/icons/youtube.svg" alt="" aria-hidden="true" class="contact-socials__icon">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta__container">
+            <h2 class="cta__title">Explorez toutes nos scènes</h2>
+            <div class="cta__description">
+                <p class="cta__text">
+                    Vivez des expériences musicales uniques sur chacune de nos scènes
+                </p>
             </div>
-
+            <a href="/404" class="button button--cta">Acheter vos billets maintenant</a>
         </div>
     </section>
 

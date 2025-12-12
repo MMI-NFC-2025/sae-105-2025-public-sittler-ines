@@ -140,7 +140,6 @@
   transition-delay: 0.35s;
 }
 
-
 /* Liens en italique avec effet hover violet */
 .menu__link {
   font-family: var(--typo-header);
@@ -149,4 +148,14 @@
   color: var(--color-white);
   text-decoration: none;
   transition: color 0.3s ease;
+}
+
+/* Added hover and active states for menu links */
+.menu__link:hover {
+  color: var(--color-yellow);
+}
+
+.menu__link--active {
+  color: var(--color-yellow);
+  font-weight: var(--weight-blod);
 }

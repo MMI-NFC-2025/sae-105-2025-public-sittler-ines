@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Sunrise - Les rives du Territoire</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script type="module" src="src/js/script.js"></script>
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="/assets/icons/logo.svg" alt="Les rives du Territoire" class="header__logo-image">
+                </a>
+            </div>
+            <button class="header__menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false"
+                aria-controls="menu">
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- menu -->
+    <nav class="menu" id="menu" aria-label="Navigation principale">
+        <div class="menu__header">
+            <a href="index.html" class="menu__logo">
+                <img src="/assets/icons/logo.svg" alt="Les rives du Territoire" class="menu__logo-img">
+            </a>
+            <button class="menu__close" aria-label="Fermer le menu">
+                <span class="menu__close-bar"></span>
+                <span class="menu__close-bar"></span>
+            </button>
+        </div>
+        <div class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="festival.html" class="menu__link">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a href="programme.html" class="menu__link">Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a href="artistes.html" class="menu__link menu__link--active">Artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="scenes.html" class="menu__link">Scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="infos-pratiques.html" class="menu__link">Info pratique</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Artist Detail Hero -->
+    <section class="artist-detail-hero">
+        <div class="artist-detail-hero__image">
+            <img src="/placeholder.svg?height=600&width=1400" 
+                 alt="DJ Sunrise" class="artist-detail-hero__img">
+        </div>
+        <div class="artist-detail-hero__content">
+            <h1 class="artist-detail-hero__name">DJ Sunrise</h1>
+            <div class="artist-detail-hero__info">
+                <span class="artist-detail-hero__date">20 Décembre 2026 - 18:00</span>
+                <span class="artist-detail-hero__stage">Scène Principale</span>
+                <span class="artist-detail-hero__genre">Electro</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artist Description -->
+    <section class="artist-detail-section">
+        <div class="artist-detail-section__container">
+            <article class="artist-detail-content">
+                <h2 class="artist-detail-content__title">À propos de l'artiste</h2>
+                <div class="artist-detail-content__text">
+                    <p>
+                        DJ Sunrise est une figure montante de la scène électronique française. Avec son style unique
+                        mêlant electro house et deep techno, il a su conquérir les plus grandes salles de concert
+                        et festivals à travers l'Europe.
+                    </p>
+                    <p>
+                        Originaire de Lyon, DJ Sunrise a débuté sa carrière en 2018 et a rapidement gagné en notoriété
+                        grâce à ses sets énergiques et sa capacité à créer une atmosphère unique. Son dernier album
+                        "Dawn of Sound" a été salué par la critique et a atteint le top 10 des charts électroniques.
+                    </p>
+                    <p>
+                        Pour cette édition des Rives du Territoire, DJ Sunrise nous promet un set exclusif qui ouvrira
+                        le festival en beauté. Attendez-vous à une performance immersive avec des visuels spectaculaires
+                        et une énergie communicative qui donnera le ton pour ces quatre jours de festival inoubliables.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Artist Gallery -->
+    <section class="artist-gallery">
+        <div class="artist-gallery__container">
+            <h2 class="artist-gallery__title">Galerie photo</h2>
+            <div class="artist-gallery__grid">
+                <div class="artist-gallery__item">
+                    <img src="/placeholder.svg?height=400&width=600" 
+                         alt="DJ Sunrise en concert" class="artist-gallery__img">
+                </div>
+                <div class="artist-gallery__item">
+                    <img src="/placeholder.svg?height=400&width=600" 
+                         alt="DJ Sunrise avec le public" class="artist-gallery__img">
+                </div>
+                <div class="artist-gallery__item">
+                    <img src="/placeholder.svg?height=400&width=600" 
+                         alt="DJ Sunrise en action" class="artist-gallery__img">
+                </div>
+                <div class="artist-gallery__item">
+                    <img src="/placeholder.svg?height=400&width=600" 
+                         alt="Show lumineux" class="artist-gallery__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Artists -->
+    <section class="back-link-section">
+        <div class="back-link-section__container">
+            <a href="artistes.html" class="button button--secondary">Retour à la liste des artistes</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <img src="assets/icons/logo.svg" alt="Les rives du Territoire" class="footer__logo-image">
+            </div>
+            <div class="footer__menu">
+                <h3 class="footer__menu-title">MENU</h3>
+                <nav class="footer__nav" aria-label="Navigation de pied de page">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="programme.html" class="footer__nav-link">ÉVÉNEMENT</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="contact.html" class="footer__nav-link">CONTACT</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="festival.html" class="footer__nav-link">À PROPOS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__social">
+                <h3 class="footer__social-title">NOUS SUIVRE</h3>
+                <div class="footer__social-links">
+                    <a href="https://www.facebook.com/?locale=fr_FR" class="footer__social-link" aria-label="Facebook">
+                        <img src="assets/icons/facebook.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/" class="footer__social-link" aria-label="Instagram">
+                        <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                    <a href="https://x.com/?lang=fr" class="footer__social-link" aria-label="Twitter">
+                        <img src="assets/icons/x.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                    <a href="https://www.youtube.com/" class="footer__social-link" aria-label="YouTube">
+                        <img src="assets/icons/youtube.svg" alt="" aria-hidden="true" class="footer__social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

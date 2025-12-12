@@ -1,0 +1,223 @@
+/* Artists Page Components - BEM Methodology */
+
+/* Artists Section */
+.artists-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-white);
+}
+
+.artists-section__container {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Artist Card */
+.artist-card {
+  background-color: var(--color-blackCard);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.artist-card__link {
+  text-decoration: none;
+  display: block;
+}
+
+.artist-card__image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.artist-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.artist-card:hover .artist-card__img {
+  transform: scale(1.05);
+}
+
+.artist-card__content {
+  padding: 1.5rem;
+}
+
+.artist-card__name {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h3);
+  font-weight: var(--weight-blod);
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+  line-height: var(--line-height-1);
+}
+
+.artist-card__info {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b3);
+  color: var(--color-white);
+  margin-bottom: 0.75rem;
+  font-weight: var(--weight-regular);
+}
+
+.artist-card__genre {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-family: var(--typo-body);
+  font-size: var(--fs-b3);
+  color: var(--color-black);
+  background-color: var(--color-yellow);
+  border-radius: 1rem;
+  font-weight: var(--weight-regular);
+}
+
+/* Artist Detail Hero */
+.artist-detail-hero {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  margin-top: 5rem;
+}
+
+.artist-detail-hero__image {
+  width: 100%;
+  height: 100%;
+}
+
+.artist-detail-hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artist-detail-hero__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.artist-detail-hero__name {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h1);
+  font-weight: var(--weight-blod);
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  line-height: var(--line-height-1);
+}
+
+.artist-detail-hero__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.artist-detail-hero__date,
+.artist-detail-hero__stage {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b2);
+  color: var(--color-white);
+  font-weight: var(--weight-regular);
+}
+
+.artist-detail-hero__genre {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-family: var(--typo-body);
+  font-size: var(--fs-b2);
+  color: var(--color-black);
+  background-color: var(--color-yellow);
+  border-radius: 1rem;
+  font-weight: var(--weight-regular);
+}
+
+/* Artist Detail Section */
+.artist-detail-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-white);
+}
+
+.artist-detail-section__container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.artist-detail-content__title {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h2);
+  font-weight: var(--weight-blod);
+  color: var(--color-black);
+  margin-bottom: 2rem;
+  line-height: var(--line-height-1);
+}
+
+.artist-detail-content__text p {
+  font-family: var(--typo-body);
+  font-size: var(--fs-b2);
+  color: var(--color-black);
+  line-height: var(--line-height-2);
+  margin-bottom: 1.5rem;
+  font-weight: var(--weight-regular);
+}
+
+/* Artist Gallery */
+.artist-gallery {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-blackCard);
+}
+
+.artist-gallery__container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.artist-gallery__title {
+  font-family: var(--typo-header);
+  font-size: var(--fs-h2);
+  font-weight: var(--weight-blod);
+  color: var(--color-white);
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: var(--line-height-1);
+}
+
+.artist-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.artist-gallery__item {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.artist-gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.artist-gallery__item:hover .artist-gallery__img {
+  transform: scale(1.05);
+}
+
+/* Back Link Section */
+.back-link-section {
+  padding: 2rem 1.5rem;
+  background-color: var(--color-white);
+}
+
+.back-link-section__container {
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: center;
+}
