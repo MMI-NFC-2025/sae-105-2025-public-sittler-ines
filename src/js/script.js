@@ -113,3 +113,66 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 })
+
+
+// Simple Carousel Initialization
+document.addEventListener("DOMContentLoaded", () => {
+  const carousels = document.querySelectorAll('.carousel')
+
+  carousels.forEach((carousel) => {
+    const track = carousel.querySelector('.carousel__track')
+    const slides = Array.from(carousel.querySelectorAll('.carousel__slide'))
+    const prevBtn = carousel.querySelector('.carousel__btn--prev')
+    const nextBtn = carousel.querySelector('.carousel__btn--next')
+    const dotsContainer = carousel.querySelector('.carousel__dots')
+    let current = 0
+    let intervalId = null
+
+    // create dots
+    slides.forEach((_, i) => {
+      const btn = document.createElement('button')
+      btn.type = 'button'
+      btn.setAttribute('aria-selected', i === 0 ? 'true' : 'false')
+      btn.addEventListener('click', () => goToSlide(i))
+      dotsContainer.appendChild(btn)
+    })
+
+    const dots = Array.from(dotsContainer.children)
+
+    function update() {
+      track.style.transform = `translateX(-${current * 100}%)`
+      dots.forEach((d, i) => d.setAttribute('aria-selected', i === current ? 'true' : 'false'))
+    }
+
+    function goToSlide(index) {
+      current = (index + slides.length) % slides.length
+      update()
+      resetInterval()
+    }
+
+    function prev() { goToSlide(current - 1) }
+    function next() { goToSlide(current + 1) }
+
+    prevBtn.addEventListener('click', prev)
+    nextBtn.addEventListener('click', next)
+
+    // keyboard support
+    carousel.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') prev()
+      if (e.key === 'ArrowRight') next()
+    })
+
+    function startInterval() {
+      intervalId = setInterval(() => { goToSlide(current + 1) }, 5000)
+    }
+
+    function resetInterval() {
+      if (intervalId) clearInterval(intervalId)
+      startInterval()
+    }
+
+    startInterval()
+    // expose controls for testing
+    carousel._carousel = { goToSlide, next, prev }
+  })
+})

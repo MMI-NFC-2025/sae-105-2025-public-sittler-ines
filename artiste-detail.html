@@ -74,15 +74,15 @@
     <!-- Artist Detail Hero -->
     <section class="artist-detail-hero">
         <div class="artist-detail-hero__image">
-            <img src="/placeholder.svg?height=600&width=1400" 
+            <img src="assets/img/Pomme.avif" 
                  alt="DJ Sunrise" class="artist-detail-hero__img">
         </div>
         <div class="artist-detail-hero__content">
-            <h1 class="artist-detail-hero__name">DJ Sunrise</h1>
+            <h1 class="artist-detail-hero__name">Pomme</h1>
             <div class="artist-detail-hero__info">
                 <span class="artist-detail-hero__date">20 Décembre 2026 - 18:00</span>
                 <span class="artist-detail-hero__stage">Scène Principale</span>
-                <span class="artist-detail-hero__genre">Electro</span>
+                <span class="artist-detail-hero__genre">Pop indépendante</span>
             </div>
         </div>
     </section>
@@ -94,46 +94,40 @@
                 <h2 class="artist-detail-content__title">À propos de l'artiste</h2>
                 <div class="artist-detail-content__text">
                     <p>
-                        DJ Sunrise est une figure montante de la scène électronique française. Avec son style unique
-                        mêlant electro house et deep techno, il a su conquérir les plus grandes salles de concert
-                        et festivals à travers l'Europe.
+                        Artiste française talentueuse, Pomme est connue pour ses mélodies poétiques et sa voix captivante. Ses compositions mêlent pop et folk avec une touche de modernité qui plaît à un large public.
                     </p>
                     <p>
-                        Originaire de Lyon, DJ Sunrise a débuté sa carrière en 2018 et a rapidement gagné en notoriété
-                        grâce à ses sets énergiques et sa capacité à créer une atmosphère unique. Son dernier album
-                        "Dawn of Sound" a été salué par la critique et a atteint le top 10 des charts électroniques.
-                    </p>
-                    <p>
-                        Pour cette édition des Rives du Territoire, DJ Sunrise nous promet un set exclusif qui ouvrira
-                        le festival en beauté. Attendez-vous à une performance immersive avec des visuels spectaculaires
-                        et une énergie communicative qui donnera le ton pour ces quatre jours de festival inoubliables.
+                       Avec plusieurs albums à succès et des performances mémorables, Pomme apporte une dimension émotionnelle unique à chaque concert. Son style authentique et ses paroles sincères en font une artiste incontournable de la scène musicale française.
                     </p>
                 </div>
             </article>
         </div>
     </section>
 
-    <!-- Artist Gallery -->
+ 
+
+    <!-- Artist Gallery (Carousel) -->
     <section class="artist-gallery">
         <div class="artist-gallery__container">
-            <h2 class="artist-gallery__title">Galerie photo</h2>
-            <div class="artist-gallery__grid">
-                <div class="artist-gallery__item">
-                    <img src="/placeholder.svg?height=400&width=600" 
-                         alt="DJ Sunrise en concert" class="artist-gallery__img">
+            <h2 class="artist-gallery__title">Galerie</h2>
+
+            <div class="carousel" aria-label="Galerie de l'artiste">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Image précédente">‹</button>
+                <div class="carousel__viewport">
+                    <div class="carousel__track">
+                        <div class="carousel__slide">
+                            <img src="assets/img/Pomme3.avif" alt="Pomme live" class="carousel__img">
+                        </div>
+                        <div class="carousel__slide">
+                            <img src="assets/img/pomme2.avif" alt="Performance" class="carousel__img">
+                        </div>
+                        <div class="carousel__slide">
+                            <img src="assets/img/Pomme4.avif" alt="Scène" class="carousel__img">
+                        </div>
+                    </div>
                 </div>
-                <div class="artist-gallery__item">
-                    <img src="/placeholder.svg?height=400&width=600" 
-                         alt="DJ Sunrise avec le public" class="artist-gallery__img">
-                </div>
-                <div class="artist-gallery__item">
-                    <img src="/placeholder.svg?height=400&width=600" 
-                         alt="DJ Sunrise en action" class="artist-gallery__img">
-                </div>
-                <div class="artist-gallery__item">
-                    <img src="/placeholder.svg?height=400&width=600" 
-                         alt="Show lumineux" class="artist-gallery__img">
-                </div>
+                <button class="carousel__btn carousel__btn--next" aria-label="Image suivante">›</button>
+                <div class="carousel__dots" role="tablist" aria-label="Sélection des images"></div>
             </div>
         </div>
     </section>

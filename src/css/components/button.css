@@ -39,8 +39,8 @@
 /* Secondary Button */
 .button--secondary {
     background-color: transparent;
-    color: var(--color-white);
-    border: 0.125rem solid var(--color-white);
+    color: var(--color-black);
+    border: 0.125rem solid var(--color-black);
     /* 2px */
 }
 
